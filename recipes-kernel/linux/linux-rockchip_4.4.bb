@@ -10,6 +10,7 @@ SRCREV = "e7a4fc70448ca2f66b3df50cabe527916b42bdad"
 SRC_URI = " \
 	git://github.com/JeffyCN/mirrors.git;protocol=https;nobranch=1;branch=kernel-4.4-2022_11_23; \
 	file://${THISDIR}/files/cgroups.cfg \
+	file://0001-ARM-8933-1-replace-Sun-Solaris-style-flag-on-section.patch \
 "
 
 KERNEL_VERSION_SANITY_SKIP = "1"
