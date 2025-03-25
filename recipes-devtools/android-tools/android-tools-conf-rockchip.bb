@@ -15,6 +15,9 @@ SRC_URI:append = " \
 	file://10-adbd-rockchip.conf \
 "
 
+S = "${WORKDIR}/sources"
+UNPACKDIR = "${S}"
+
 do_install:append() {
 	install -d ${D}${sysconfdir}/init.d
 	install -m 0755 ${UNPACKDIR}/adbd.sh ${D}${sysconfdir}/init.d/adbd.sh
